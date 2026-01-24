@@ -1,87 +1,81 @@
-# 🎉 LuckPet - E-commerce Completo para Quem Ama Pets!
+# 🎉 LuckPet - A Complete E-commerce for Pet Lovers!
 
-Um e-commerce moderno, responsivo e com sistema de autenticação para quem ama cuidar dos seus pets!
+A modern, responsive e secure e-commerce platform for those who love taking care of their pets!
 
 <p>
-  <img src="https://raw.githubusercontent.com/PabloG-7/ecommerce-luckpet/refs/heads/main/luckpet-linkedin.png" alt="LuckPet Banner"/>
+<img src="https://raw.githubusercontent.com/PabloG-7/ecommerce-luckpet/refs/heads/main/luckpet-linkedin.png" alt="LuckPet Banner"/>
 </p>
 
 ---
 
-## 🐾 Sobre o Projeto
+## 🐾 About the Project
 
-O **LuckPet** é um e-commerce desenvolvido com foco em experiência do usuário, design responsivo e funcionalidades avançadas. Possui sistema de autenticação, carrinho de compras, favoritos e um programa exclusivo de fidelidade com LuckCoins.
+**LuckPet** is an e-commerce platform developed with a focus on user experience, responsive design, and advanced features. It includes an authentication system, shopping cart, favorites, and an exclusive loyalty program with LuckCoins.
 
-💡 Navegação intuitiva, categorias bem definidas e um sistema de recompensas tornam o LuckPet a escolha perfeita para donos de pets.
+💡 Intuitive navigation, well-defined categories, and a rewards system make LuckPet the perfect choice for pet owners. ## ✨ Features
 
----
+### 🔐 Authentication System
+- Registration with email confirmation via Supabase Auth
+- Secure login with password validation
+- Personalized avatar (dog, cat, rabbit, bird)
+- Intelligent redirection after email confirmation
 
-## ✨ Funcionalidades
+### 🛍️ Products and Categories
+- Organized categories: Pet Health, Pet Fashion, Nutrition, Curiosities, Services
+- Interactive cards with animated hover effects
+- Intelligent search with real-time suggestions
+- Filters by product type and category
 
-### 🔐 Sistema de Autenticação
-- Cadastro com confirmação de email via Supabase Auth
-- Login seguro com validação de senha
-- Avatar personalizado (cachorro, gato, coelho, pássaro)
-- Redirecionamento inteligente após confirmação de email
+### 🛒 Shopping System
+- Persistent shopping cart
+- Personalized favorites list
+- Dynamic real-time counters
+- LuckCoins credit system (1 LuckCoin = R$ 1.00 discount)
 
-### 🛍️ Produtos e Categorias
-- Categorias organizadas: Saúde Pet, Moda Pet, Nutrição, Curiosidades, Serviços
-- Cards interativos com efeitos de hover animados
-- Busca inteligente com sugestões em tempo real
-- Filtros por tipo de produto e categoria
+### 💰 Loyalty Program
+- 50 free LuckCoins for new users
+- Flexible use of credits on any purchase
+- Progressive accumulation based on purchases
 
-### 🛒 Sistema de Compras
-- Carrinho de compras persistente
-- Lista de favoritos personalizada
-- Contadores dinâmicos em tempo real
-- Sistema de créditos LuckCoins (1 LuckCoin = R$ 1,00 de desconto)
-
-### 💰 Programa de Fidelidade
-- 50 LuckCoins gratuitos para novos usuários
-- Uso flexível dos créditos em qualquer compra
-- Acumulação progressiva conforme as compras
-
-### 🎨 Interface e UX
-- Design 100% responsivo (mobile, tablet, desktop)
-- Animações suaves e feedback visual
-- Modais interativos para carrinho e favoritos
-- Navegação por abas intuitiva
+### 🎨 Interface and UX
+- 100% responsive design (mobile, tablet, desktop)
+- Smooth animations and visual feedback
+- Interactive modals for cart and favorites
+- Intuitive tab navigation
 
 ---
 
-## 🌐 Deploy Online
+## 🌐 Online Deployment
 
-Acesse agora em:
+Access now at:
 
-- 🔗 [Vercel](https://projeto-luckpet.vercel.app/) 
+- 🔗 [Vercel](https://projeto-luckpet.vercel.app/)
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-| Tecnologia | Descrição |
+| Technology | Description |
 |---|---|
-| <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="20"> HTML5 | Estrutura semântica e acessível |
-| <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="20"> CSS3 | Estilização moderna com variáveis CSS e animações |
-| <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="20"> JavaScript | Lógica e interatividade avançada |
-| <img src="https://supabase.com/favicon.ico" width="20"> Supabase | Autenticação e banco de dados em tempo real |
-| <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" width="20"> Font Awesome | Ícones e elementos visuais |
+| <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="20"> HTML5 | Semantic and accessible structure |
+| <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="20"> CSS3 | Modern styling with CSS variables and animations |
+| <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="20"> JavaScript | Advanced logic and interactivity |
+| <img src="https://supabase.com/favicon.ico" width="20"> Supabase | Authentication and real-time database |
+| <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" width="20"> Font Awesome | Icons and visual elements | ---
 
----
-
-## 🚀 Como Executar Localmente
+## 🚀 How to Run Locally
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/PabloG-7/ecommerce-luckpet.git
 
-# Acesse a pasta do projeto
+# Access the project folder
 cd ecommerce-luckpet
 
-# Instale as dependências (se necessário)
-# O projeto funciona perfeitamente sem build steps
+# Install dependencies (if necessary)
+# The project works perfectly without build steps
 
-# Abra o arquivo principal
+# Open the main file
 open index.html    # macOS
 start index.html   # Windows
 xdg-open index.html # Linux
@@ -89,74 +83,74 @@ xdg-open index.html # Linux
 
 ---
 
-## 📁 Estrutura de Arquivos
+## 📁 File Structure
 
 ```
 ecommerce-luckpet/
-├── index.html               # Página principal
-├── style.css                # Estilos principais
-├── script.js                # Lógica da aplicação
+├── index.html               # Main page
+├── style.css                # Main styles
+├── script.js                # Application logic
 ├── formulario/
-│   ├── login.html           # Página de login/cadastro
-│   ├── auth.css             # Estilos de autenticação
-│   ├── auth.js              # Lógica de autenticação
-│   ├── auth-manager.js      # Gerenciador de sessão
-│   └── confirmacao-email.html # Página de confirmação
-├── img/                     # Imagens e assets
-└── pagamento.html           # Página de checkout
+│   ├── login.html           # Login/registration page
+│   ├── auth.css             # Authentication styles
+│   ├── auth.js              # Authentication logic
+│   ├── auth-manager.js      # Session manager
+│   └── confirmacao-email.html # Confirmation page
+├── img/                     # Images and assets
+└── pagamento.html           # Checkout page
 ```
 
 ---
 
-## 📱 Fluxo do Usuário
+## 📱 User Flow
 
-1. **Acesso Inicial:** Usuário navega pela vitrine sem autenticação
-2. **Cadastro:** Cria conta com email, senha e escolhe avatar
-3. **Confirmação:** Recebe email e confirma cadastro
-4. **Login:** Retorna manualmente para fazer login
-5. **Benefícios:** Recebe 50 LuckCoins de boas-vindas
-6. **Compra:** Adiciona produtos ao carrinho e usa créditos
-7. **Fidelidade:** Continua comprando para ganhar mais LuckCoins
+1. **Initial Access:** User browses the storefront without authentication
+2. **Registration:** Creates an account with email, password, and chooses an avatar
+3. **Confirmation:** Receives an email and confirms registration
+4. **Login:** Manually returns to log in
+5. **Benefits:** Receives 50 welcome LuckCoins
+6. **Purchase:** Adds products to the cart and uses credits
+7. **Loyalty:** Continues shopping to earn more LuckCoins
 
 ---
 
-## 🎯 Funcionalidades Técnicas
+## 🎯 Technical Features
 
-### Sistema de Autenticação
-- Validação de força de senha em tempo real
-- Redirecionamento personalizado pós-confirmação
-- Sincronização de sessão entre abas/dispositivos
-- Logout seguro com limpeza de dados locais
+### Authentication System
+- Real-time password strength validation
+- Custom post-confirmation redirection
+- Session synchronization between tabs/devices
+- Secure logout with local data cleanup
 
-### Gerenciamento de Estado
-- LocalStorage para carrinho e favoritos
-- Sessão persistente com Supabase Auth
-- Sincronização em tempo real entre componentes
+### State Management
+- LocalStorage for cart and favorites
+- Persistent session with Supabase Auth
+- Real-time synchronization between components
 
 ### Performance
-- Carregamento lazy de imagens
-- Animações CSS otimizadas
-- Cache inteligente de recursos
+- Lazy image loading
+- CSS animations - Optimized
+- Intelligent resource caching
 
 ---
 
-## 🤝 Contribuição
+## 🤝 Contribution
 
-Contribuições são sempre bem-vindas! Para contribuir:
+Contributions are always welcome! To contribute:
 
-1. Fork o projeto
-2. Crie uma branch para sua feature:
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. Commit suas mudanças:
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. Push para a branch:
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. Abra um Pull Request
+1. Fork the project
+2. Create a branch for your feature:
+```bash
+git checkout -b feature/AmazingFeature
+```
+3. Commit your changes:
+```bash
+git commit -m 'Add some AmazingFeature'
+```
+4. Push to the branch:
+```bash
+git push origin feature/AmazingFeature
+```
+5. Open a Pull Request
 
 ---
