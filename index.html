@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +12,18 @@
 </head>
 
 <body>
-    <!-- Barra de promoção -->
+    <!-- Promo bar -->
     <div class="promo-bar">
-        <p><strong>🎁 LuckPet Já!</strong> Seu pedido entregue em até 1h* <a href="#" class="saiba-mais">Saiba mais</a></p>
+        <p><strong>🎁 LuckPet Now!</strong> Your order delivered in up to 1h* <a href="#" class="learn-more">Learn more</a></p>
     </div>
 
-    <!-- Cabeçalho -->
+    <!-- Header -->
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">Luck<span>Pet</span></a>
             
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Para seu pet, procure aqui..." id="searchInput">
+                <input type="text" class="search-input" placeholder="Search for your pet here..." id="searchInput">
                 <div class="search-suggestions" id="searchSuggestions"></div>
                 <button class="search-btn" id="searchBtn">
                     <i class="fas fa-search"></i>
@@ -33,20 +33,20 @@
             <div class="nav-icons">
                 <div class="nav-icon" id="wishlistIcon">
                     <i class="fas fa-paw"></i>
-                    <span>Favoritos</span>
+                    <span>Favorites</span>
                     <span class="badge" id="wishlistCount">0</span>
                 </div>
                 
                 <div class="nav-icon" id="cartIcon">
                     <i class="fas fa-shopping-basket"></i>
-                    <span>Carrinho</span>
+                    <span>Cart</span>
                     <span class="badge" id="cartCount">0</span>
                 </div>
                 
                 <div class="nav-icon login-btn" id="loginBtn">
                     <a href="formulario/login.html">
                         <i class="fas fa-user-circle"></i>
-                        <span>Entrar</span>
+                        <span>Login</span>
                     </a>
                 </div>
 
@@ -70,10 +70,10 @@
                         </div>
                         <div class="user-dropdown-divider"></div>
                         <a href="#" class="user-dropdown-item">
-                            <i class="fas fa-user"></i> Meu Perfil
+                            <i class="fas fa-user"></i> My Profile
                         </a>
                         <a href="#" id="logoutBtn" class="user-dropdown-item">
-                            <i class="fas fa-sign-out-alt"></i> Sair
+                            <i class="fas fa-sign-out-alt"></i> Logout
                         </a>
                     </div>
                 </div>
@@ -89,13 +89,13 @@
                 <i class="fas fa-gift"></i>
             </div>
             <div class="welcome-content">
-                <h2>Bem-vindo à LuckPet!</h2>
-                <p>Você ganhou <strong>50 LuckCoins</strong> para usar em sua primeira compra!</p>
-                <p>Os LuckCoins são créditos que você pode usar como desconto em nossos produtos.</p>
-                <p><strong>1 LuckCoin = R$ 1,00 de desconto</strong></p>
-                <p>Continue comprando para ganhar mais LuckCoins!</p>
+                <h2>Welcome to LuckPet!</h2>
+                <p>You earned <strong>50 LuckCoins</strong> to use on your first purchase!</p>
+                <p>LuckCoins are credits you can use for discounts on our products.</p>
+                <p><strong>1 LuckCoin = $1.00 discount</strong></p>
+                <p>Keep shopping to earn more LuckCoins!</p>
             </div>
-            <button class="btn-primary" onclick="closeWelcome()">Explorar Produtos</button>
+            <button class="btn-primary" onclick="closeWelcome()">Explore Products</button>
         </div>
     </div>
 </section>
@@ -105,15 +105,15 @@
         <div class="promo-banners">
             <div class="promo-banner animate-slideInUp animate-delay-0">
                 <i class="fas fa-shopping-bag"></i>
-                <p>Descontos de 15% a 25% OFF + Frete Grátis! <a href="#">Clique aqui</a></p>
+                <p>15%-25% OFF + Free Shipping! <a href="#">Learn more</a></p>
             </div>
             <div class="promo-banner animate-slideInUp animate-delay-1">
                 <i class="fas fa-tag"></i>
-                <p>Ganhe 10% na Primeira Compra! Código: <strong>BEMVINHO10!</strong> <a href="#">Clique aqui</a></p>
+                <p>Get 10% on your first purchase! Code: <strong>WELCOME10!</strong> <a href="#">Learn more</a></p>
             </div>
             <div class="promo-banner animate-slideInUp animate-delay-2">
                 <i class="fas fa-spa"></i>
-                <p>Agende Já! Banho e Tosa com 15% de Desconto! <a href="#">Clique aqui</a></p>
+                <p>Book now! Bath & Grooming 15% off! <a href="#">Learn more</a></p>
             </div>
         </div>
     </div>
@@ -123,27 +123,27 @@
         <div class="hero-carousel">
             <div class="carousel-inner" id="carouselInner">
                 <div class="carousel-item animate-fadeIn animate-delay-0">
-                    <img src="img/anuncios/racao-anuncio.jpg" alt="Promoção de ração" loading="lazy">
+                    <img src="img/anuncios/racao-anuncio.jpg" alt="Food promotion" loading="lazy">
                     <div class="carousel-caption">
-                        <h2>Ração Premium para Seu Pet</h2>
-                        <p>Descontos especiais em alimentos de alta qualidade</p>
-                        <button class="btn-primary">Ver Ofertas</button>
+                        <h2>Premium Food for Your Pet</h2>
+                        <p>Special discounts on premium food</p>
+                        <button class="btn-primary">See Offers</button>
                     </div>
                 </div>
                 <div class="carousel-item animate-fadeIn animate-delay-1">
-                    <img src="img/anuncios/acessorio-anuncio.jpg" alt="Promoção de acessórios" loading="lazy">
+                    <img src="img/anuncios/acessorio-anuncio.jpg" alt="Accessory promotion" loading="lazy">
                     <div class="carousel-caption">
-                        <h2>Acessórios Incríveis</h2>
-                        <p>Encontre os melhores produtos para seu companheiro</p>
-                        <button class="btn-primary">Comprar Agora</button>
+                        <h2>Amazing Accessories</h2
+                        <p>Find the best products for your companion</p>
+                        <button class="btn-primary">Shop Now</button>
                     </div>
                 </div>
                 <div class="carousel-item animate-fadeIn animate-delay-2">
-                    <img src="img/anuncios/banhoetosa-anuncio.jpg" alt="Promoção de serviços" loading="lazy">
+                    <img src="img/anuncios/banhoetosa-anuncio.jpg" alt="Service promotion" loading="lazy">
                     <div class="carousel-caption">
-                        <h2>Serviços de Qualidade</h2>
-                        <p>Banho, tosa e consultas com profissionais especializados</p>
-                        <button class="btn-primary">Agendar</button>
+                        <h2>Quality Services</h2>
+                        <p>Bath, grooming and veterinary consultation with specialists</p>
+                        <button class="btn-primary">Book</button>
                     </div>
                 </div>
             </div>
@@ -155,39 +155,39 @@
     <div class="container">
         <div class="categories">
             <a href="#saude-pet" class="category-item animate-slideInUp animate-delay-0" data-section="saude-pet">
-                <div class="category-icon"><i class="fas fa-pills"></i></div><span>Saúde Pet</span>
+                <div class="category-icon"><i class="fas fa-pills"></i></div><span>Pet Health</span>
             </a>
             <a href="#moda-pet" class="category-item animate-slideInUp animate-delay-1" data-section="moda-pet">
-                <div class="category-icon"><i class="fas fa-tshirt"></i></div><span>Moda Pet</span>
+                <div class="category-icon"><i class="fas fa-tshirt"></i></div><span>Pet Fashion</span>
             </a>
             <a href="#nutricao-pet" class="category-item animate-slideInUp animate-delay-2" data-section="nutricao-pet">
-                <div class="category-icon"><i class="fas fa-apple-alt"></i></div><span>Nutrição</span>
+                <div class="category-icon"><i class="fas fa-apple-alt"></i></div><span>Nutrition</span>
             </a>
-            <a href="#curiosidades" class="category-item animate-slideInUp animate-delay-3" data-section="curiosidades">
-                <div class="category-icon"><i class="fas fa-lightbulb"></i></div><span>Curiosidades</span>
+            <a href="#Trivia" class="category-item animate-slideInUp animate-delay-3" data-section="Trivia">
+                <div class="category-icon"><i class="fas fa-lightbulb"></i></div><span>Trivia</span>
             </a>
             <a href="#servicos" class="category-item animate-slideInUp animate-delay-4" data-section="servicos">
-                <div class="category-icon"><i class="fas fa-concierge-bell"></i></div><span>Serviços</span>
+                <div class="category-icon"><i class="fas fa-concierge-bell"></i></div><span>Services</span>
             </a>
         </div>
     </div>
 
-    <!-- Seção de Moda Pet -->
+    <!-- Seção de Pet Fashion -->
     <section class="section" id="moda-pet">
         <div class="container">
-            <h2 class="section-title animate-slideInUp animate-delay-0">Estilo Premium Para Seu <span>Melhor Amigo!</span></h2>
+            <h2 class="section-title animate-slideInUp animate-delay-0">Premium Style For Your <span>Best Friend!</span></h2>
             <div class="products-grid">
                 <div class="product-card animate-slideInUp animate-delay-0">
                     <div class="product-image">
-                        <img src="img/roupas/cachorro-roupa.jpg" alt="Roupa para Cachorro" loading="lazy">
-                        <div class="product-badge">Oferta</div>
+                        <img src="img/roupas/cachorro-roupa.jpg" alt="Dog Clothing" loading="lazy">
+                        <div class="product-badge">Sale</div>
                         <div class="product-wishlist" data-product="roupa1"><i class="far fa-heart"></i></div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Conjunto Esportivo</h3>
+                        <h3 class="product-title">Sports Set</h3>
                         <p class="product-desc">Conforto e estilo para seu pet</p>
                         <div class="product-size">
-                            <span class="size-label">Tamanhos:</span>
+                            <span class="size-label">Sizes:</span>
                             <div class="size-options">
                                 <span class="size-option">P</span>
                                 <span class="size-option">M</span>
@@ -199,11 +199,11 @@
                             <span class="price-original">R$ 99,99</span>
                             <span class="price-discount">20% OFF</span>
                             <span class="price-credits">
-                                <i class="fas fa-coins"></i> Use até 75 LuckCoins
+                                <i class="fas fa-coins"></i> Use up to 75 LuckCoins
                             </span>
                         </div>
                         <div class="product-actions">
-                            <button class="btn-cart" data-product="roupa1" data-price="79.99"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                            <button class="btn-cart" data-product="roupa1" data-price="79.99"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                             <button class="btn-wishlist" data-product="roupa1"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
@@ -214,10 +214,10 @@
                         <div class="product-wishlist" data-product="roupa2"><i class="far fa-heart"></i></div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Casaco Acolchoado</h3>
+                        <h3 class="product-title">Padded Jacket</h3>
                         <p class="product-desc">Perfeito para dias frios</p>
                         <div class="product-size">
-                            <span class="size-label">Tamanhos:</span>
+                            <span class="size-label">Sizes:</span>
                             <div class="size-options">
                                 <span class="size-option">P</span>
                                 <span class="size-option">M</span>
@@ -230,11 +230,11 @@
                             <span class="price-original">R$ 109,99</span>
                             <span class="price-discount">18% OFF</span>
                             <span class="price-credits">
-                                <i class="fas fa-coins"></i> Use até 85 LuckCoins
+                                <i class="fas fa-coins"></i> Use up to 85 LuckCoins
                             </span>
                         </div>
                         <div class="product-actions">
-                            <button class="btn-cart" data-product="roupa2" data-price="89.99"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                            <button class="btn-cart" data-product="roupa2" data-price="89.99"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                             <button class="btn-wishlist" data-product="roupa2"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
@@ -242,14 +242,14 @@
                 <div class="product-card animate-slideInUp animate-delay-2">
                     <div class="product-image">
                         <img src="img/roupas/img-cat.jpg" alt="Vestido Pet" loading="lazy">
-                        <div class="product-badge">Novo</div>
+                        <div class="product-badge">New</div>
                         <div class="product-wishlist" data-product="roupa3"><i class="far fa-heart"></i></div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Visão de Estilo</h3>
                         <p class="product-desc">Elegância e conforto para seu pet</p>
                         <div class="product-size">
-                            <span class="size-label">Tamanhos:</span>
+                            <span class="size-label">Sizes:</span>
                             <div class="size-options">
                                 <span class="size-option">P</span>
                                 <span class="size-option">M</span>
@@ -260,11 +260,11 @@
                             <span class="price-original">R$ 89,99</span>
                             <span class="price-discount">22% OFF</span>
                             <span class="price-credits">
-                                <i class="fas fa-coins"></i> Use até 65 LuckCoins
+                                <i class="fas fa-coins"></i> Use up to 65 LuckCoins
                             </span>
                         </div>
                         <div class="product-actions">
-                            <button class="btn-cart" data-product="roupa3" data-price="69.99"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                            <button class="btn-cart" data-product="roupa3" data-price="69.99"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                             <button class="btn-wishlist" data-product="roupa3"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
@@ -274,36 +274,36 @@
     </section>
 
 
-    <!-- Seção de Nutrição Pet - CORRIGIDA -->
+    <!-- Nutrition Section (Corrected) -->
 <section class="section" id="nutricao-pet">
     <div class="container">
-        <h2 class="section-title">Nutrição Balanceada Para Uma <span>Vida Saudável</span></h2>
+        <h2 class="section-title">Balanced Nutrition for a <span>Healthy Life</span></h2>
         
         <div class="products-grid" id="racao-grid">
             <!-- Produto 1 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="img/racao/racao1.jpg" alt="Ração Premium Canina" loading="lazy">
+                    <img src="img/racao/racao1.jpg" alt="Premium Dog Food" loading="lazy">
                     <div class="product-wishlist" data-product="racao1">
                         <i class="far fa-heart"></i>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Ração Premium Canina</h3>
-                    <p class="product-desc">Nutrição completa para cães de todas as raças</p>
+                    <h3 class="product-title">Premium Dog Food</h3>
+                    <p class="product-desc">Complete nutrition for dogs of all breeds</p>
                     <div class="product-size">
-                        <span class="size-label">Para:</span>
-                        <span class="size-option adulto">Adultos</span>
+                        <span class="size-label">For:</span>
+                        <span class="size-option adulto">Adults</span>
                     </div>
                     <div class="product-price">
                         <span class="price-current">R$ 129,99</span>
                         <span class="price-credits">
-                            <i class="fas fa-coins"></i> Use até 120 LuckCoins
+                            <i class="fas fa-coins"></i> Use up to 120 LuckCoins
                         </span>
                     </div>
                     <div class="product-actions">
                         <button class="btn-cart" data-product="racao1" data-price="129.99">
-                            <i class="fas fa-shopping-cart"></i> Adicionar
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
                         </button>
                         <button class="btn-wishlist" data-product="racao1">
                             <i class="far fa-heart"></i>
@@ -315,30 +315,30 @@
             <!-- Produto 2 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="img/racao/racao3.jpg" alt="Ração Premium Felina" loading="lazy">
-                    <div class="product-badge">Oferta</div>
+                    <img src="img/racao/racao3.jpg" alt="Premium Cat Food" loading="lazy">
+                    <div class="product-badge">Sale</div>
                     <div class="product-wishlist" data-product="racao2">
                         <i class="far fa-heart"></i>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Ração Premium Felina</h3>
-                    <p class="product-desc">Fórmula especial para saúde dos gatos</p>
+                    <h3 class="product-title">Premium Cat Food</h3>
+                    <p class="product-desc">Special formula for cat health</p>
                     <div class="product-size">
-                        <span class="size-label">Para:</span>
-                        <span class="size-option adulto">Adultos</span>
+                        <span class="size-label">For:</span>
+                        <span class="size-option adulto">Adults</span>
                     </div>
                     <div class="product-price">
                         <span class="price-current">R$ 89,90</span>
                         <span class="price-original">R$ 119,90</span>
                         <span class="price-discount">25% OFF</span>
                         <span class="price-credits">
-                            <i class="fas fa-coins"></i> Use até 85 LuckCoins
+                            <i class="fas fa-coins"></i> Use up to 85 LuckCoins
                         </span>
                     </div>
                     <div class="product-actions">
                         <button class="btn-cart" data-product="racao2" data-price="89.90">
-                            <i class="fas fa-shopping-cart"></i> Adicionar
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
                         </button>
                         <button class="btn-wishlist" data-product="racao2">
                             <i class="far fa-heart"></i>
@@ -350,27 +350,27 @@
             <!-- Produto 3 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="img/racao/racao2.jpg" alt="Ração Crescimento Saudável" loading="lazy">
+                    <img src="img/racao/racao2.jpg" alt="Healthy Growth Food" loading="lazy">
                     <div class="product-wishlist" data-product="racao3">
                         <i class="far fa-heart"></i>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title">Ração Crescimento Saudável</h3>
-                    <p class="product-desc">Especialmente desenvolvida para filhotes</p>
+                    <h3 class="product-title">Healthy Growth Food</h3>
+                    <p class="product-desc">Specially developed for puppies</p>
                     <div class="product-size">
-                        <span class="size-label">Para:</span>
-                        <span class="size-option filhote">Filhotes</span>
+                        <span class="size-label">For:</span>
+                        <span class="size-option filhote">Puppies</span>
                     </div>
                     <div class="product-price">
                         <span class="price-current">R$ 99,99</span>
                         <span class="price-credits">
-                            <i class="fas fa-coins"></i> Use até 95 LuckCoins
+                            <i class="fas fa-coins"></i> Use up to 95 LuckCoins
                         </span>
                     </div>
                     <div class="product-actions">
                         <button class="btn-cart" data-product="racao3" data-price="99.99">
-                            <i class="fas fa-shopping-cart"></i> Adicionar
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
                         </button>
                         <button class="btn-wishlist" data-product="racao3">
                             <i class="far fa-heart"></i>
@@ -382,36 +382,36 @@
     </div>
 </section>
 
-    <!-- Seção de Agendamento de Serviços -->
+    <!-- Scheduling Services Section -->
     <section class="section" id="servicos">
         <div class="container">
-            <h2 class="section-title">Agende Seu <span>Serviço</span></h2>
+            <h2 class="section-title">Schedule Your <span>Service</span></h2>
             
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-bath"></i>
                     </div>
-                    <h3 class="service-title">Banho Completo</h3>
+                    <h3 class="service-title">Complete Bath</h3>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Banho higiênico</li>
-                        <li><i class="fas fa-check"></i> Secagem profissional</li>
-                        <li><i class="fas fa-check"></i> Corte de unhas</li>
+                        <li><i class="fas fa-check"></i> Professional drying</li>
+                        <li><i class="fas fa-check"></i> Nail trimming</li>
                     </ul>
-                    <button class="btn-primary" data-service="banho">Agendar</button>
+                    <button class="btn-primary" data-service="banho">Book</button>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-cut"></i>
                     </div>
-                    <h3 class="service-title">Tosa Premium</h3>
+                    <h3 class="service-title">Premium Grooming</h3>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Tosa na máquina</li>
-                        <li><i class="fas fa-check"></i> Modelagem personalizada</li>
+                        <li><i class="fas fa-check"></i> Custom styling</li>
                         <li><i class="fas fa-check"></i> Estética completa</li>
                     </ul>
-                    <button class="btn-primary" data-service="tosa">Agendar</button>
+                    <button class="btn-primary" data-service="tosa">Book</button>
                 </div>
 
                 <div class="service-card">
@@ -420,11 +420,11 @@
                     </div>
                     <h3 class="service-title">Consulta Veterinária</h3>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Check-up completo</li>
+                        <li><i class="fas fa-check"></i> Complete check-up</li>
                         <li><i class="fas fa-check"></i> Vacinação</li>
-                        <li><i class="fas fa-check"></i> Exames laboratoriais</li>
+                        <li><i class="fas fa-check"></i> Laboratory tests</li>
                     </ul>
-                    <button class="btn-primary" data-service="consulta">Agendar</button>
+                    <button class="btn-primary" data-service="consulta">Book</button>
                 </div>
             </div>
         </div>
@@ -434,20 +434,20 @@
     <div class="modal" id="bookingModal">
         <div class="modal-content">
             <span class="modal-close" id="closeBookingModal">&times;</span>
-            <h2 class="modal-title">Agendar Serviço</h2>
+            <h2 class="modal-title">Book Serviço</h2>
             <form id="bookingForm">
                 <div class="form-group">
                     <label for="serviceType">Serviço:</label>
                     <select id="serviceType" required>
                         <option value="">Selecione...</option>
-                        <option value="banho">Banho Completo</option>
-                        <option value="tosa">Tosa Premium</option>
+                        <option value="banho">Complete Bath</option>
+                        <option value="tosa">Premium Grooming</option>
                         <option value="consulta">Consulta Veterinária</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="petType">Tipo de Pet:</label>
+                    <label for="petType">Pet Type:</label>
                     <select id="petType" required>
                         <option value="">Selecione...</option>
                         <option value="cachorro">Cachorro</option>
@@ -457,7 +457,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="bookingDate">Data:</label>
+                    <label for="bookingDate">Date:</label>
                     <input type="date" id="bookingDate" required>
                 </div>
 
@@ -466,45 +466,45 @@
                     <input type="time" id="bookingTime" min="09:00" max="18:00" required>
                 </div>
 
-                <button type="submit" class="btn-primary">Confirmar Agendamento</button>
+                <button type="submit" class="btn-primary">Confirm Booking</button>
             </form>
         </div>
     </div>
 
-    <!-- Seção de Curiosidades -->
-    <section class="section" id="curiosidades">
+    <!-- Seção de Trivia -->
+    <section class="section" id="Trivia">
         <div class="container">
-            <h2 class="section-title">Descubra Mais Sobre Seu <span>Amigo!</span></h2>
+            <h2 class="section-title">Discover More About Your <span>Friend!</span></h2>
             
             <div class="facts-grid">
                 <div class="fact-card">
                      <img src="img/curiosidades/curi-cachorro1.png" alt="Cachorro preto olhando atento para a câmera" class="fact-image" loading="lazy">
                 <div class="fact-overlay">
-                    <p><span>Sabia?</span> Cães conseguem ouvir sons até <strong>4 vezes</strong> more distantes do que os humanos</p>
+                    <p><span>Did you know?</span> Cães conseguem ouvir sons até <strong>4 vezes</strong> more distantes do que os humanos</p>
                     </div>
                 </div>
                 
                 <div class="fact-card">
                     <img src="img/curiosidades/curi-gato.png" alt="Gato pulando" class="fact-image" loading="lazy">
                     <div class="fact-overlay">
-                        <p><span>Sabia?</span> Gatos podem pular até seis vezes a altura do seu corpo</p>
+                        <p><span>Did you know?</span> Gatos podem pular até seis vezes a altura do seu corpo</p>
                     </div>
                 </div>
                 
                 <div class="fact-card">
                     <img src="img/curiosidades/curi-cachorro2.png" alt="Cachorro farejando" class="fact-image" loading="lazy">
                     <div class="fact-overlay">
-                        <p><span>Sabia?</span> Cachorros têm olfato até 10.000 vezes mais forte que o nosso!</p>
+                        <p><span>Did you know?</span> Cachorros têm olfato até 10.000 vezes mais forte que o nosso!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Planos de Saúde -->
+    <!-- Health Plans Section -->
     <section class="section" id="saude-pet">
         <div class="container">
-            <h2 class="section-title">Bem-Estar Completo Para Seu <span>Companheiro</span></h2>
+            <h2 class="section-title">Complete Wellness For Your <span>Companion</span></h2>
             
             <div class="plans-grid">
                 <!-- Plano Básico -->
@@ -515,41 +515,41 @@
                     <ul class="plan-features">
                         <li>Consulta veterinária mensal</li>
                         <li>Vacinação anual</li>
-                        <li>Desconto em medicamentos</li>
+                        <li>Medication discounts</li>
                         <li>Teleorientação 24h</li>
                     </ul>
                     <a href="formulario/login.html" class="btn-primary">Assinar Agora</a>
                 </div>
                 
-                <!-- Plano Essencial -->
+                <!-- Essential Plan -->
                 <div class="plan-card popular">
                     <h3 class="plan-title">LuckPet</h3>
-                    <p class="plan-subtitle">Plano Essencial</p>
+                    <p class="plan-subtitle">Essential Plan</p>
                     <div class="plan-price">R$ 179,90 <span>/mês</span></div>
                     <ul class="plan-features">
                         <li>Consulta veterinária mensal</li>
                         <li>Vacinação anual</li>
-                        <li>Desconto em medicamentos</li>
+                        <li>Medication discounts</li>
                         <li>Teleorientação 24h</li>
-                        <li>Exames laboratoriais</li>
+                        <li>Laboratory tests</li>
                         <li>Internação com desconto</li>
                     </ul>
                     <a href="formulario/login.html" class="btn-primary">Assinar Agora</a>
                 </div>
                 
-                <!-- Plano Premium -->
+                <!-- Premium Plan -->
                 <div class="plan-card">
                     <h3 class="plan-title">LuckPet</h3>
-                    <p class="plan-subtitle">Plano Premium</p>
+                    <p class="plan-subtitle">Premium Plan</p>
                     <div class="plan-price">R$ 299,90 <span>/mês</span></div>
                     <ul class="plan-features">
                         <li>Consulta veterinária mensal</li>
                         <li>Vacinação anual</li>
-                        <li>Desconto em medicamentos</li>
+                        <li>Medication discounts</li>
                         <li>Teleorientação 24h</li>
-                        <li>Exames laboratoriais</li>
+                        <li>Laboratory tests</li>
                         <li>Internação com desconto</li>
-                        <li>Banho e tosa mensal</li>
+                        <li>Monthly bath & grooming</li>
                         <li>Transporte veterinário</li>
                     </ul>
                     <a href="formulario/login.html" class="btn-primary">Assinar Agora</a>
@@ -564,37 +564,37 @@
     <div class="modal" id="cartModal">
         <div class="modal-content">
             <span class="modal-close" id="closeCartModal">&times;</span>
-            <h2 class="modal-title">Seu Carrinho</h2>
+            <h2 class="modal-title">Your Cart</h2>
             
             <div class="cart-items" id="cartItems">
                 <!-- Itens do carrinho serão inseridos aqui via JavaScript -->
             </div>
             
             <div class="cart-total" id="cartTotal">
-                Subtotal: R$ 0,00
+                Subtotal: R$ 0.00
             </div>
             
             <div class="credits-application" id="creditsApplication" style="display: none;">
                 <div class="credits-balance">
                     <i class="fas fa-coins"></i> 
-                    <span>Seus LuckCoins: <strong id="cartCreditsBalance">0</strong></span>
+                    <span>Your LuckCoins: <strong id="cartCreditsBalance">0</strong></span>
                 </div>
                 <div class="credits-input">
-                    <label for="useCredits">Usar LuckCoins:</label>
+                    <label for="useCredits">Use LuckCoins:</label>
                     <input type="number" id="useCredits" min="0" value="0" max="0">
                     <span class="credits-max" id="setMaxCredits">Máx</span>
                 </div>
                 <div class="credits-savings">
-                    <span>Desconto: <strong id="creditsDiscount">R$ 0,00</strong></span>
+                    <span>Discount: <strong id="creditsDiscount">R$ 0.00</strong></span>
                 </div>
             </div>
             
             <div class="final-total" id="finalTotal">
-                Total com desconto: R$ 0,00
+                Total com Discount: R$ 0.00
             </div>
             
             <button class="checkout-btn" id="checkoutBtn">
-                <a href="pagamento.html">Finalizar Compra</a>
+                <a href="pagamento.html">Checkout</a>
             </button>
         </div>
     </div>
@@ -603,21 +603,21 @@
     <div class="modal" id="wishlistModal">
         <div class="modal-content">
             <span class="modal-close" id="closeWishlistModal">&times;</span>
-            <h2 class="modal-title">Seus Favoritos</h2>
+            <h2 class="modal-title">Your Favorites</h2>
             
             <div class="wishlist-items" id="wishlistItems">
                 <!-- Itens dos favoritos serão inseridos aqui via JavaScript -->
             </div>
             
             <div class="wishlist-empty" id="wishlistEmpty">
-                Você ainda não tem favoritos
+                You don\'t have any favorites yet
             </div>
         </div>
     </div>
 
     <!-- Notificação -->
     <div class="notification" id="notification">
-        Produto adicionado ao carrinho!
+        Product added to cart!
     </div>
 
     <!-- Rodapé -->
@@ -626,7 +626,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>LuckPet</h3>
-                    <p>Cuide do seu pet com os melhores produtos e serviços!</p>
+                    <p>Take care of your pet with the best products and services!</p>
                     <div class="footer-social">
                         <a href="https://www.facebook.com/profile.php?id=100024656091863">
                             <i class="fab fa-facebook-f"></i>
@@ -644,33 +644,33 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Links Rápidos</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Sobre Nós</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Nossos Serviços</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">About Us</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Our Services</a></li>
                         <li><i class="fas fa-chevron-right"></i> <a href="#">Produtos</a></li>
                         <li><i class="fas fa-chevron-right"></i> <a href="#">Blog</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Contato</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Suporte</h4>
+                    <h4>Support</h4>
                     <ul>
                         <li><i class="fas fa-chevron-right"></i> <a href="#">FAQ</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Política de Privacidade</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Privacy Policy</a></li>
                         <li><i class="fas fa-chevron-right"></i> <a href="#">Termos de Uso</a></li>
                         <li><i class="fas fa-chevron-right"></i> <a href="#">Central de Ajuda</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#">Pagamentos</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Payments</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contato</h4>
+                    <h4>Contact</h4>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> Rua dos Animais, 123</li>
                         <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-envelope"></i> contato@luckpet.com</li>
+                        <li><i class="fas fa-envelope"></i> Contact@luckpet.com</li>
                     </ul>
                 </div>
             </div>
@@ -696,3 +696,16 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

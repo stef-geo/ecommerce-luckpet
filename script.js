@@ -1,4 +1,4 @@
-// ===== INICIALIZAÇÃO DO AUTH MANAGER =====
+// ===== AUTH MANAGER INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar o gerenciador de autenticação
     if (typeof AuthManager !== 'undefined') {
@@ -84,59 +84,59 @@ function clearUserData() {
     renderWishlist();
 }
 
-// ===== DADOS E INICIALIZAÇÃO =====
+// ===== DATA AND INITIALIZATION =====
 const produtos = {
-    racao1: { nome: "Ração Premium Canina", preco: 129.99, tipo: "alimento", img: "img/racao/racao1.jpg" },
-    racao2: { nome: "Ração Premium Felina", preco: 89.90, tipo: "alimento", img: "img/racao/racao3.jpg" },
-    racao3: { nome: "Ração para Filhotes", preco: 99.99, tipo: "alimento", img: "img/racao/racao2.jpg" },
-    racao4: { nome: "Ração Light", preco: 139.99, tipo: "alimento", img: "img/racao/racao4.jpg" },
-    racao5: { nome: "Ração Júnior Ossinho", preco: 99.99, tipo: "alimento", img: "img/racao/racao5.jpg" },
-    racao6: { nome: "Ração Júnior Vitality", preco: 99.99, tipo: "alimento", img: "img/racao/racao6.jpg" },
-    roupa1: { nome: "Conjunto Esportivo", preco: 79.99, tipo: "vestimenta", img: "img/roupas/cachorro-roupa.jpg" },
-    roupa2: { nome: "Casaco Acolchoado", preco: 89.99, tipo: "vestimenta", img: "img/roupas/fantasia.jpg" },
-    roupa3: { nome: "Fantasia Divertida", preco: 65.00, tipo: "vestimenta", img: "img/roupas/img-cat.jpg" }
+    racao1: { nome: "Premium Dog Food", preco: 129.99, tipo: "food", img: "img/racao/racao1.jpg" },
+    racao2: { nome: "Premium Cat Food", preco: 89.90, tipo: "food", img: "img/racao/racao3.jpg" },
+    racao3: { nome: "Puppy Growth Food", preco: 99.99, tipo: "food", img: "img/racao/racao2.jpg" },
+    racao4: { nome: "Light Diet Food", preco: 139.99, tipo: "food", img: "img/racao/racao4.jpg" },
+    racao5: { nome: "Junior Bone Food", preco: 99.99, tipo: "food", img: "img/racao/racao5.jpg" },
+    racao6: { nome: "Junior Vitality Food", preco: 99.99, tipo: "food", img: "img/racao/racao6.jpg" },
+    roupa1: { nome: "Sport Set", preco: 79.99, tipo: "clothing", img: "img/roupas/cachorro-roupa.jpg" },
+    roupa2: { nome: "Padded Jacket", preco: 89.99, tipo: "clothing", img: "img/roupas/fantasia.jpg" },
+    roupa3: { nome: "Fun Costume", preco: 65.00, tipo: "clothing", img: "img/roupas/img-cat.jpg" }
 };
 
 // Conteúdos do site para a busca
 const conteudosSite = {
     // Seções e páginas
-    secoes: [
-        { id: "saude-pet", nome: "Saúde Pet", tipo: "secao", descricao: "Planos de saúde e cuidados veterinários" },
-        { id: "moda-pet", nome: "Moda Pet", tipo: "secao", descricao: "Roupas e acessórios para seu pet" },
-        { id: "nutricao-pet", nome: "Nutrição", tipo: "secao", descricao: "Alimentos e rações de qualidade" },
-        { id: "curiosidades", nome: "Curiosidades", tipo: "secao", descricao: "Fatos interessantes sobre pets" },
-        { id: "servicos", nome: "Serviços", tipo: "secao", descricao: "Banho, tosa e consultas veterinárias" }
+    sections: [
+        { id: "saude-pet", nome: "Pet Health", tipo: "section", descricao: "Health plans and veterinarian care" },
+        { id: "moda-pet", nome: "Pet Fashion", tipo: "section", descricao: "Clothing and accessories for your pet" },
+        { id: "nutricao-pet", nome: "Nutrition", tipo: "section", descricao: "Quality food and nutrition" },
+        { id: "Trivia", nome: "Trivia", tipo: "section", descricao: "Interesting facts about pets" },
+        { id: "services", nome: "Services", tipo: "section", descricao: "Bath, grooming and veterinarian consultation" }
     ],
     
-    // Serviços oferecidos
-    servicos: [
-        { id: "banho", nome: "Banho Completo", tipo: "servico", descricao: "Banho higiênico e secagem profissional" },
-        { id: "tosa", nome: "Tosa Premium", tipo: "servico", descricao: "Tosa na máquina e modelagem personalizada" },
-        { id: "consulta", nome: "Consulta Veterinária", tipo: "servico", descricao: "Check-up completo e vacinação" }
+    // Offered services
+    services: [
+        { id: "banho", nome: "Complete Bath", tipo: "service", descricao: "Hygienic bath and professional drying" },
+        { id: "tosa", nome: "Premium Grooming", tipo: "service", descricao: "Machine grooming and personalized styling" },
+        { id: "consulta", nome: "Veterinary Consultation", tipo: "service", descricao: "Complete check-up and vaccination" }
     ],
     
-    // Planos de saúde
-    planos: [
-        { id: "plano-basico", nome: "Plano Básico", tipo: "plano", descricao: "Consulta mensal e vacinação anual", preco: "R$ 99,90/mês" },
-        { id: "plano-essencial", nome: "Plano Essencial", tipo: "plano", descricao: "Exames laboratoriais incluídos", preco: "R$ 179,90/mês" },
-        { id: "plano-premium", nome: "Plano Premium", tipo: "plano", descricao: "Banho e tosa mensal gratuitos", preco: "R$ 299,90/mês" }
+    // Health plans
+    plans: [
+        { id: "plan-basico", nome: "Basic Plan", tipo: "plan", descricao: "Monthly consultation and yearly vaccination", preco: "R$ 99,90/month" },
+        { id: "plan-essencial", nome: "Essential Plan", tipo: "plan", descricao: "Laboratory tests included", preco: "R$ 179,90/month" },
+        { id: "plan-premium", nome: "Premium Plan", tipo: "plan", descricao: "Free monthly bath and grooming", preco: "R$ 299,90/month" }
     ],
     
-    // Curiosidades
-    curiosidades: [
-        { id: "curiosidade1", nome: "Audição Canina", tipo: "curiosidade", descricao: "Cães ouvem sons 4 vezes mais distantes que humanos" },
-        { id: "curiosidade2", nome: "Salto Felino", tipo: "curiosidade", descricao: "Gatos pulam até 6 vezes a altura do corpo" },
-        { id: "curiosidade3", nome: "Olfato Canino", tipo: "curiosidade", descricao: "Cachorros têm olfato 10.000 vezes mais forte" }
+    // Trivia
+    Trivia: [
+        { id: "trivia1", nome: "Canine Hearing", tipo: "trivia", descricao: "Dogs hear sounds 4 times farther than humans" },
+        { id: "trivia2", nome: "Feline Jump", tipo: "trivia", descricao: "Cats can jump up to 6 times their body height" },
+        { id: "trivia3", nome: "Canine Sense of Smell", tipo: "trivia", descricao: "Dogs have a sense of smell 10,000 times stronger" }
     ]
 };
 
-// Categorias para sugestões de pesquisa
+// Categories for search suggestions
 const categorias = {
-    alimento: "Alimentos",
-    vestimenta: "Roupas e Acessórios",
-    servico: "Serviços",
-    plano: "Planos de Saúde",
-    curiosidade: "Curiosidades"
+    alimento: "Food",
+    clothing: "Clothing & Accessories",
+    service: "Services",
+    plan: "Health Plans",
+    trivia: "Trivia"
 };
 
 let carrinho = {};
@@ -488,35 +488,35 @@ function initSearch() {
         });
         
         // Buscar seções do site
-        const sectionResults = conteudosSite.secoes.filter(section => {
+        const sectionResults = conteudosSite.sections.filter(section => {
             return section.nome.toLowerCase().includes(searchTerm) || 
                    section.descricao.toLowerCase().includes(searchTerm);
         });
         
         // Buscar serviços
-        const serviceResults = conteudosSite.servicos.filter(service => {
+        const serviceResults = conteudosSite.services.filter(service => {
             return service.nome.toLowerCase().includes(searchTerm) || 
                    service.descricao.toLowerCase().includes(searchTerm);
         });
         
-        // Buscar planos
-        const planResults = conteudosSite.planos.filter(plan => {
+        // Buscar plans
+        const planResults = conteudosSite.plans.filter(plan => {
             return plan.nome.toLowerCase().includes(searchTerm) || 
                    plan.descricao.toLowerCase().includes(searchTerm);
         });
         
-        // Buscar curiosidades
-        const curiosityResults = conteudosSite.curiosidades.filter(curiosity => {
+        // Buscar Trivia
+        const curiosityResults = conteudosSite.Trivia.filter(curiosity => {
             return curiosity.nome.toLowerCase().includes(searchTerm) || 
                    curiosity.descricao.toLowerCase().includes(searchTerm);
         });
         
         // Combinar todos os resultados
         const allResults = [
-            ...sectionResults.map(item => ({ ...item, categoria: 'secao' })),
-            ...serviceResults.map(item => ({ ...item, categoria: 'servico' })),
-            ...planResults.map(item => ({ ...item, categoria: 'plano' })),
-            ...curiosityResults.map(item => ({ ...item, categoria: 'curiosidade' })),
+            ...sectionResults.map(item => ({ ...item, categoria: 'section' })),
+            ...serviceResults.map(item => ({ ...item, categoria: 'service' })),
+            ...planResults.map(item => ({ ...item, categoria: 'plan' })),
+            ...curiosityResults.map(item => ({ ...item, categoria: 'trivia' })),
             ...productResults.map(([id, product]) => ({ 
                 id, 
                 nome: product.nome, 
@@ -549,10 +549,10 @@ function initSearch() {
         
         let html = '';
         
-        // Seções do site
-        if (groupedResults['secao'] && groupedResults['secao'].length > 0) {
-            html += '<div class="search-category-title">Seções do Site</div>';
-            groupedResults['secao'].forEach(item => {
+        // Site sections
+        if (groupedResults['section'] && groupedResults['section'].length > 0) {
+            html += '<div class="search-category-title">Site Sections</div>';
+            groupedResults['section'].forEach(item => {
                 html += `
                     <div class="search-suggestion" data-section="${item.id}">
                         <div><i class="fas fa-folder"></i> ${item.nome}</div>
@@ -562,10 +562,10 @@ function initSearch() {
             });
         }
         
-        // Serviços
-        if (groupedResults['servico'] && groupedResults['servico'].length > 0) {
-            html += '<div class="search-category-title">Serviços</div>';
-            groupedResults['servico'].forEach(item => {
+        // Services
+        if (groupedResults['service'] && groupedResults['service'].length > 0) {
+            html += '<div class="search-category-title">Services</div>';
+            groupedResults['service'].forEach(item => {
                 html += `
                     <div class="search-suggestion" data-service="${item.id}">
                         <div><i class="fas fa-concierce-bell"></i> ${item.nome}</div>
@@ -575,12 +575,12 @@ function initSearch() {
             });
         }
         
-        // Planos de saúde
-        if (groupedResults['plano'] && groupedResults['plano'].length > 0) {
-            html += '<div class="search-category-title">Planos de Saúde</div>';
-            groupedResults['plano'].forEach(item => {
+        // Health plans
+        if (groupedResults['plan'] && groupedResults['plan'].length > 0) {
+            html += '<div class="search-category-title">Health Plans</div>';
+            groupedResults['plan'].forEach(item => {
                 html += `
-                    <div class="search-suggestion" data-plano="${item.id}">
+                    <div class="search-suggestion" data-plan="${item.id}">
                         <div><i class="fas fa-heartbeat"></i> ${item.nome}</div>
                         <small>${item.descricao} - ${item.preco}</small>
                     </div>
@@ -588,12 +588,12 @@ function initSearch() {
             });
         }
         
-        // Curiosidades
-        if (groupedResults['curiosidade'] && groupedResults['curiosidade'].length > 0) {
-            html += '<div class="search-category-title">Curiosidades</div>';
-            groupedResults['curiosidade'].forEach(item => {
+        // Trivia
+        if (groupedResults['trivia'] && groupedResults['trivia'].length > 0) {
+            html += '<div class="search-category-title">Trivia</div>';
+            groupedResults['trivia'].forEach(item => {
                 html += `
-                    <div class="search-suggestion" data-curiosidade="${item.id}">
+                    <div class="search-suggestion" data-trivia="${item.id}">
                         <div><i class="fas fa-lightbulb"></i> ${item.nome}</div>
                         <small>${item.descricao}</small>
                     </div>
@@ -626,7 +626,7 @@ function initSearch() {
                     searchSuggestions.classList.remove('active');
                     
                     // Scroll para a seção de produtos
-                    scrollParaSecao('nutricao-pet');
+                    scrollParasection('nutricao-pet');
                     
                     // Destacar o produto após um pequeno delay
                     setTimeout(() => {
@@ -642,7 +642,7 @@ function initSearch() {
                 const sectionId = this.getAttribute('data-section');
                 searchInput.value = this.querySelector('div').textContent;
                 searchSuggestions.classList.remove('active');
-                scrollParaSecao(sectionId);
+                scrollParasection(sectionId);
             });
         });
         
@@ -659,27 +659,27 @@ function initSearch() {
             });
         });
         
-        // Adicionar eventos para planos
-        document.querySelectorAll('.search-suggestion[data-plano]').forEach(suggestion => {
+        // Adicionar eventos para plans
+        document.querySelectorAll('.search-suggestion[data-plan]').forEach(suggestion => {
             suggestion.addEventListener('click', function() {
                 searchInput.value = this.querySelector('div').textContent;
                 searchSuggestions.classList.remove('active');
-                scrollParaSecao('saude-pet');
+                scrollParasection('saude-pet');
             });
         });
         
-        // Adicionar eventos para curiosidades
-        document.querySelectorAll('.search-suggestion[data-curiosidade]').forEach(suggestion => {
+        // Adicionar eventos para Trivia
+        document.querySelectorAll('.search-suggestion[data-trivia]').forEach(suggestion => {
             suggestion.addEventListener('click', function() {
                 searchInput.value = this.querySelector('div').textContent;
                 searchSuggestions.classList.remove('active');
-                scrollParaSecao('curiosidades');
+                scrollParasection('Trivia');
             });
         });
     }
     
     // Função para scroll suave até uma seção
-    function scrollParaSecao(sectionId) {
+    function scrollParasection(sectionId) {
         const targetSection = document.getElementById(sectionId);
         if (targetSection) {
             const headerHeight = document.querySelector('.header').offsetHeight;
@@ -745,10 +745,10 @@ function initSearch() {
         
         // Buscar em todos os conteúdos
         const allResults = [
-            ...conteudosSite.secoes,
-            ...conteudosSite.servicos,
-            ...conteudosSite.planos,
-            ...conteudosSite.curiosidades,
+            ...conteudosSite.sections,
+            ...conteudosSite.services,
+            ...conteudosSite.plans,
+            ...conteudosSite.Trivia,
             ...Object.entries(produtos).map(([id, product]) => ({ 
                 id,
                 nome: product.nome, 
@@ -798,19 +798,19 @@ function initSearch() {
         if (bestMatch.id) {
             // Se for um produto, mostrar na seção de produtos
             if (bestMatch.categoria === 'produto') {
-                scrollParaSecao('nutricao-pet');
+                scrollParasection('nutricao-pet');
                 
                 // Destacar o produto após um pequeno delay
                 setTimeout(() => {
                     highlightProduct(bestMatch.id);
                 }, 800);
             } 
-            // Se for uma seção, serviço, plano ou curiosidade
+            // Se for uma seção, serviço, plan ou trivia
             else {
-                scrollParaSecao(bestMatch.id);
+                scrollParasection(bestMatch.id);
                 
                 // Se for um serviço, abrir o modal de agendamento
-                if (bestMatch.tipo === 'servico') {
+                if (bestMatch.tipo === 'service') {
                     setTimeout(() => {
                         document.getElementById('serviceType').value = bestMatch.id;
                         document.getElementById('bookingModal').classList.add('active');
@@ -821,7 +821,7 @@ function initSearch() {
     }
 }
 
-// ===== FUNÇÕES DE INICIALIZAÇÃO =====
+// ===== INITIALIZATION FUNCTIONS =====
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar carrinho e favoritos do localStorage APENAS se o usuário estiver logado
     try {
@@ -1631,7 +1631,7 @@ function loadGuestData() {
     }
 }
 
-// Modificar a inicialização do DOMContentLoaded
+// Modify DOMContentLoaded initialization
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar modo convidado primeiro
     if (window.GuestMode && window.GuestMode.initGuestMode) {
@@ -1725,3 +1725,5 @@ function toggleWishlist(productId) {
         updateWishlistButtons();
     });
 }
+
+

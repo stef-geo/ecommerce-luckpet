@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar Compra - LuckPet</title>
+    <title>Checkout - LuckPet</title>
     <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmY2YjM1IiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHptMCA0NDhjLTExMC41IDAtMjAwLTg5LjUtMjAwLTIwMFMxNDUuNSA1NiAyNTYgNTZzMjAwIDg5LjUgMjAwIDIwMC04OS41IDIwMC0yMDAgMjAweiIvPjxwYXRoIGZpbGw9IiMyZWMyYjYiIGQ9Ik0zMDAuMyAxMzUuN2wtMjIuOS0yMi45Yy0yLjktMi45LTcuNy0yLjktMTAuNiAwTDI1NiAxNDUuMWwtMTAtMzIuM2MtMi45LTkuMy0xMy41LTExLjctMjAuNC01TDIxNSAxMjUuN2MtNi4zIDYuMy02LjMgMTYuNCAwIDIyLjdsMjIuOSAyMi45YzIuOSAyLjkgMi45IDcuNyAwIDEwLjZMMjA2LjkgMTkxbDMyLjMgMTBjOS4zIDIuOSAxMS43IDEzLjUgNSAyMC40bC0xNi42IDIwLjZjLTYuMyA2LjMtNi4zIDE2LjQgMCAyMi43bDIyLjkgMjIuOWMyLjkgMi45IDcuNyAyLjkgMTAuNiAwTDI1NiAzNjYuOWwxMC4xIDMyLjNjMi45IDkuMyAxMy41IDExLjcgMjAuNCA1bDE2LjYtMjAuNmM2LjMtNi4zIDYuMy0xNi40IDAtMjIuN2wtMjIuOS0yMi45Yy0yLjktMi45LTIuOS03LjcgMC0xMC42TDMwNS4xIDMxMmwtMzIuMy0xMGMtOS4zLTIuOS0xMS43LTEzLjUtNS0yMC40bDE2LjYtMjAuNmM2LjMtNi4zIDYuMy0xNi40IDAtMjIuN3oiLz48L3N2Zz4=" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -142,7 +142,7 @@
             }
         }
 
-        /* Seção do resumo do pedido */
+        /* Seção do Order Summary */
         .order-summary {
             background: white;
             border-radius: var(--radius);
@@ -410,7 +410,7 @@
             line-height: 1.5;
         }
 
-        /* Botão de finalizar compra */
+        /* Botão de Checkout */
         .checkout-btn {
             width: 100%;
             padding: 16px;
@@ -735,7 +735,7 @@
         <div class="container header-content">
             <a href="index.html" class="logo">Luck<span>Pet</span></a>
             <a href="index.html" class="back-to-store">
-                <i class="fas fa-arrow-left"></i> Voltar para a loja
+                <i class="fas fa-arrow-left"></i> Back to Store
             </a>
         </div>
     </header>
@@ -744,16 +744,16 @@
     <main class="payment-main">
         <div class="container">
             <div class="page-title animate-fadeIn">
-                <h1>Finalizar Compra</h1>
-                <p>Revise seu pedido e escolha a forma de pagamento</p>
+                <h1>Checkout</h1>
+                <p>Review your order and choose a payment method</p>
             </div>
 
             <div class="checkout-container">
-                <!-- Resumo do pedido -->
+                <!-- Order Summary -->
                 <section class="order-summary animate-fadeIn">
                     <div class="section-title">
                         <i class="fas fa-shopping-bag"></i>
-                        <h2>Resumo do Pedido</h2>
+                        <h2>Order Summary</h2>
                     </div>
 
                     <div class="cart-items" id="cart-items-container">
@@ -784,7 +784,7 @@
                 <section class="payment-section animate-fadeIn">
                     <div class="section-title">
                         <i class="fas fa-credit-card"></i>
-                        <h2>Forma de Pagamento</h2>
+                        <h2>Payment Method</h2>
                     </div>
 
                     <div class="payment-methods">
@@ -831,7 +831,7 @@
                                 <p>Use seus créditos para pagar a compra</p>
                                 <div class="credits-info">
                                     <i class="fas fa-wallet"></i>
-                                    <span>Saldo disponível: <strong id="credits-balance">0</strong> LuckCoins</span>
+                                    <span>Available balance: <strong id="credits-balance">0</strong> LuckCoins</span>
                                 </div>
                             </div>
                         </div>
@@ -856,7 +856,7 @@
                                     <li>Selecione a opção PIX</li>
                                     <li>Escaneie o QR Code acima</li>
                                     <li>Confirme o pagamento</li>
-                                    <li>Seu pedido será processado automaticamente</li>
+                                    <li>Your order will be processed automatically</li>
                                 </ol>
                             </div>
                         </div>
@@ -920,27 +920,27 @@
                                 <span id="credits-total">R$ 0,00</span>
                             </div>
                             <div class="credits-summary">
-                                <span>Seu saldo:</span>
+                                <span>Your balance:</span>
                                 <span id="credits-user-balance">0 LuckCoins</span>
                             </div>
                             <div class="credits-warning" id="credits-warning">
                                 <i class="fas fa-exclamation-triangle"></i>
-                                <span>Saldo insuficiente. Você precisa de mais <strong id="credits-needed">0</strong> LuckCoins.</span>
+                                <span>Insufficient balance. You need <strong id="credits-needed">0</strong> more LuckCoins.</span>
                             </div>
                             <div class="credits-after-payment" id="credits-after-payment">
-                                <span>Saldo após a compra: <strong id="credits-remaining">0</strong> LuckCoins</span>
+                                <span>Balance after purchase: <strong id="credits-remaining">0</strong> LuckCoins</span>
                             </div>
                             
-                            <!-- Nova seção de progresso e formas de ganhar mais coins -->
+                            <!-- New section for progress and ways to earn more coins -->
                             <div class="credits-progress" id="credits-progress">
-                                <h4>Continue acumulando LuckCoins!</h4>
+                                <h4>Keep earning LuckCoins!</h4>
                                 <p>Seu progresso atual:</p>
                                 <div class="progress-bar">
                                     <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
                                 </div>
                                 <div class="progress-text">
-                                    <span id="current-level">Nível 1</span>
-                                    <span id="next-level">Nível 2: 100 LuckCoins</span>
+                                    <span id="current-level">Level 1</span>
+                                    <span id="next-level">Level 2: 100 LuckCoins</span>
                                 </div>
                                 
                                 <div class="ways-to-earn">
@@ -957,7 +957,7 @@
                     </div>
 
                     <button class="checkout-btn" id="complete-order">
-                        <i class="fas fa-lock"></i> Finalizar Pedido
+                        <i class="fas fa-lock"></i> Complete Order
                     </button>
                 </section>
             </div>
@@ -976,17 +976,17 @@
                     <h3>Links Rápidos</h3>
                     <ul>
                         <li><a href="index.html"><i class="fas fa-chevron-right"></i> Página Inicial</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Nossos Produtos</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Our Products</a></li>
                         <li><a href="#"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section footer-links">
-                    <h3>Suporte</h3>
+                    <h3>Support</h3>
                     <ul>
                         <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Política de Privacidade</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Termos de Uso</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Use</a></li>
                         <li><a href="#"><i class="fas fa-chevron-right"></i> Trocas e Devoluções</a></li>
                     </ul>
                 </div>
@@ -1032,28 +1032,28 @@
             const nextLevel = document.getElementById('next-level');
             
             if (userCredits < 100) {
-                // Nível 1 (0-99 coins)
+                // Level 1 (0-99 coins)
                 const progress = (userCredits / 100) * 100;
                 progressFill.style.width = `${progress}%`;
-                currentLevel.textContent = `Nível 1: ${userCredits} LuckCoins`;
-                nextLevel.textContent = `Nível 2: 100 LuckCoins`;
+                currentLevel.textContent = `Level 1: ${userCredits} LuckCoins`;
+                nextLevel.textContent = `Level 2: 100 LuckCoins`;
             } else if (userCredits < 250) {
-                // Nível 2 (100-249 coins)
+                // Level 2 (100-249 coins)
                 const progress = ((userCredits - 100) / 150) * 100;
                 progressFill.style.width = `${progress}%`;
-                currentLevel.textContent = `Nível 2: ${userCredits} LuckCoins`;
-                nextLevel.textContent = `Nível 3: 250 LuckCoins`;
+                currentLevel.textContent = `Level 2: ${userCredits} LuckCoins`;
+                nextLevel.textContent = `Level 3: 250 LuckCoins`;
             } else if (userCredits < 500) {
-                // Nível 3 (250-499 coins)
+                // Level 3 (250-499 coins)
                 const progress = ((userCredits - 250) / 250) * 100;
                 progressFill.style.width = `${progress}%`;
-                currentLevel.textContent = `Nível 3: ${userCredits} LuckCoins`;
-                nextLevel.textContent = `Nível 4: 500 LuckCoins`;
+                currentLevel.textContent = `Level 3: ${userCredits} LuckCoins`;
+                nextLevel.textContent = `Level 4: 500 LuckCoins`;
             } else {
-                // Nível 4 (500+ coins)
+                // Level 4 (500+ coins)
                 progressFill.style.width = `100%`;
-                currentLevel.textContent = `Nível 4: ${userCredits} LuckCoins`;
-                nextLevel.textContent = `Nível máximo alcançado!`;
+                currentLevel.textContent = `Level 4: ${userCredits} LuckCoins`;
+                nextLevel.textContent = `Max level reached!`;
             }
         }
 
@@ -1119,7 +1119,7 @@
             updateCheckoutButton();
         }
 
-        // Atualizar estado do botão de finalizar compra
+        // Atualizar estado do botão de Checkout
         function updateCheckoutButton() {
             const completeOrderBtn = document.getElementById('complete-order');
             
@@ -1127,13 +1127,13 @@
                 const creditsCost = Math.floor(total);
                 if (userCredits < creditsCost) {
                     completeOrderBtn.disabled = true;
-                    completeOrderBtn.innerHTML = '<i class="fas fa-lock"></i> Saldo insuficiente';
+                    completeOrderBtn.innerHTML = '<i class="fas fa-lock"></i> Insufficient balance';
                     return;
                 }
             }
             
             completeOrderBtn.disabled = false;
-            completeOrderBtn.innerHTML = '<i class="fas fa-lock"></i> Finalizar Pedido';
+            completeOrderBtn.innerHTML = '<i class="fas fa-lock"></i> Complete Order';
         }
 
         // Processar pagamento com créditos
@@ -1148,7 +1148,7 @@
                     return true;
                 }
             } else {
-                showNotification('Saldo de LuckCoins insuficiente. Escolha outra forma de pagamento.', true);
+                showNotification('Insufficient LuckCoins balance. Choose another payment method.', true);
             }
             
             return false;
@@ -1169,16 +1169,16 @@
                     <div style="background: linear-gradient(135deg, #FF9F1C, #FF6B35); width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 30px;">
                         <i class="fas fa-check" style="font-size: 50px; color: white;"></i>
                     </div>
-                    <h2 style="color: #FF6B35; margin-bottom: 20px;">Compra Realizada com Sucesso!</h2>
+                    <h2 style="color: #FF6B35; margin-bottom: 20px;">Purchase Successful!</h2>
                     
                     <div style="background: rgba(40, 167, 69, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #28A745; margin-bottom: 30px; max-width: 400px;">
                         <p style="font-size: 1.2rem; margin-bottom: 10px;">Você usou <strong style="color: #FF9F1C;">${creditsUsed} LuckCoins</strong> para finalizar sua compra.</p>
-                        <p style="font-size: 1.1rem;">Saldo restante: <strong style="color: #FF9F1C;">${remainingCredits} LuckCoins</strong></p>
+                        <p style="font-size: 1.1rem;">Remaining balance: <strong style="color: #FF9F1C;">${remainingCredits} LuckCoins</strong></p>
                     </div>
                     
                     <div style="background: rgba(46, 196, 182, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #2EC4B6; margin-bottom: 30px; max-width: 500px;">
-                        <h3 style="color: #2EC4B6; margin-bottom: 15px;">Continue acumulando LuckCoins!</h3>
-                        <p style="color: #6C757D; margin-bottom: 10px;">Quanto mais você compra, mais LuckCoins você ganha:</p>
+                        <h3 style="color: #2EC4B6; margin-bottom: 15px;">Keep earning LuckCoins!</h3>
+                        <p style="color: #6C757D; margin-bottom: 10px;">The more you buy, the more LuckCoins you earn:</p>
                         <ul style="text-align: left; color: #6C757D;">
                             <li><strong>+5 coins</strong> para cada R$ 50,00 em compras</li>
                             <li><strong>+10 coins</strong> ao avaliar produtos comprados</li>
@@ -1188,7 +1188,7 @@
                     </div>
                     
                     <a href="index.html" style="background: linear-gradient(135deg, #FF6B35 0%, #FF9F1C 100%); color: white; padding: 15px 30px; border-radius: 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
-                        <i class="fas fa-home"></i> Voltar para a Loja
+                        <i class="fas fa-home"></i> Back to Store
                     </a>
                 </div>
             `;
@@ -1390,7 +1390,7 @@
             
             // Gera o QR Code PIX
             function generatePixQrCode() {
-                const chavePix = "contato@luckpet.com";
+                const chavePix = "Contact@luckpet.com";
                 const nomeRecebedor = "LuckPet Comercio de Produtos para Pets";
                 const cidadeRecebedor = "Sao Paulo";
                 const valorPagamento = total.toFixed(2);
@@ -1467,7 +1467,7 @@
                 return hex.padStart(4, '0');
             }
             
-            // Finaliza o pedido
+            // Complete the order
             completeOrderBtn.addEventListener('click', function() {
                 const selectedMethod = document.querySelector('input[name="payment-method"]:checked').value;
                 
@@ -1494,16 +1494,16 @@
                     }
                 } else if (selectedMethod === 'credits') {
                     if (!processCreditsPayment()) {
-                        showNotification('Saldo de LuckCoins insuficiente para completar a compra.', true);
+                        showNotification('Insufficient LuckCoins balance to complete the purchase.', true);
                         return;
                     } else {
-                        // Pagamento com créditos bem-sucedido - não continuar com o processamento normal
+                        // Credits payment succeeded - do not continue with normal processing
                         return;
                     }
                 }
                 
-                // Simula o processamento do pedido para outros métodos de pagamento
-                showNotification(`Pedido realizado com sucesso!\nForma de pagamento: ${selectedMethod.toUpperCase()}\nTotal: R$ ${total.toFixed(2)}`);
+                // Simulate order processing for other payment methods
+                showNotification(`Order completed successfully!\nPayment Method: ${selectedMethod.toUpperCase()}\nTotal: R$ ${total.toFixed(2)}`);
                 
                 // Limpa o carrinho
                 localStorage.removeItem('carrinho');
@@ -1521,3 +1521,6 @@
     </script>
 </body>
 </html>
+
+
+

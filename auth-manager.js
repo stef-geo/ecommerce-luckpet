@@ -1,4 +1,4 @@
-// auth-manager.js - CONFIGURADO PARA SEU SITE
+// auth-manager.js - CONFIGURADO PARA Your SITE
 
 // SUA URL DA API - Você precisa criar uma API na Vercel!
 // Por enquanto, vamos usar localStorage e depois você migra para a API
@@ -12,7 +12,7 @@ class AuthManager {
     }
 
     async init() {
-        console.log('AuthManager inicializando...');
+        console.log('AuthManager initializing...');
         
         // Verificar se há usuário salvo no localStorage
         await this.checkLocalStorage();
@@ -42,7 +42,7 @@ class AuthManager {
     
     async signIn(email, password) {
         try {
-            console.log('Tentando login...');
+            console.log('Attempting login...');
             
             // Para AGORA: usar localStorage
             // DEPOIS: substituir por chamada à API
@@ -73,24 +73,24 @@ class AuthManager {
                 localStorage.setItem('userProfile', JSON.stringify(this.profile));
                 localStorage.setItem('userCredits', (savedUser.credits || 50).toString());
                 
-                console.log('✅ Login realizado:', this.user.email);
+                console.log('✅ Login successful:', this.user.email);
                 
                 await this.checkAndAwardCredits();
                 this.updateUI();
                 return { success: true, user: this.user };
             }
             
-            return { success: false, error: 'Email ou senha incorretos' };
+            return { success: false, error: 'Email or password incorrect' };
             
         } catch (error) {
-            console.error('❌ Erro no login:', error);
+            console.error('❌ Login error:', error);
             return { success: false, error: error.message };
         }
     }
 
     async signUp(email, password, name, avatar = 'cachorro') {
         try {
-            console.log('Tentando cadastro...');
+            console.log('Attempting signup...');
             
             // Verificar se usuário já existe
             const users = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
@@ -139,13 +139,13 @@ class AuthManager {
             localStorage.setItem('userCredits', '50');
             localStorage.setItem('isNewUser', 'true');
             
-            console.log('✅ Cadastro realizado:', this.user.email);
+            console.log('✅ Signup completed:', this.user.email);
             
             this.updateUI();
             return { success: true, user: this.user };
             
         } catch (error) {
-            console.error('❌ Erro no cadastro:', error);
+            console.error('❌ Signup error:', error);
             return { success: false, error: error.message };
         }
     }
@@ -183,13 +183,13 @@ class AuthManager {
             localStorage.setItem('userCredits', '25');
             localStorage.setItem('isNewUser', 'true');
             
-            console.log('✅ Login como convidado:', this.user.nome);
+            console.log('✅ Guest login:', this.user.nome);
             
             this.updateUI();
             return { success: true, user: this.user, isGuest: true };
             
         } catch (error) {
-            console.error('❌ Erro no login como convidado:', error);
+            console.error('❌ Login error como convidado:', error);
             return { success: false, error: error.message };
         }
     }
@@ -223,14 +223,14 @@ class AuthManager {
             this.user = null;
             this.profile = null;
             
-            console.log('✅ Logout realizado');
+            console.log('✅ Logout successful');
             this.updateUI();
             
             // Redirecionar para página inicial
             window.location.href = 'https://projeto-luckpet.vercel.app/';
             
         } catch (error) {
-            console.error('❌ Erro ao fazer logout:', error);
+            console.error('❌ Error logging out:', error);
         }
     }
 

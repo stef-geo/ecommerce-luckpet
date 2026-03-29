@@ -19,9 +19,9 @@ const pool = new Pool({
 // Testar conexão
 pool.connect((err, client, release) => {
   if (err) {
-    console.error('Erro ao conectar ao banco:', err);
+    console.error('Error connecting to the database:', err);
   } else {
-    console.log('Conectado ao PostgreSQL!');
+    console.log('Connected to PostgreSQL!');
     release();
   }
 });
@@ -66,9 +66,9 @@ async function createTables() {
         data_adicao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
-    console.log('Tabelas criadas/verificadas!');
+    console.log('Tables created/verified!');
   } catch (error) {
-    console.error('Erro ao criar tabelas:', error);
+    console.error('Error creating tables:', error);
   }
 }
 
@@ -76,7 +76,7 @@ createTables();
 
 // Rotas da API
 
-// 1. Cadastro de usuário
+// 1. Registration de usuário
 app.post('/api/register', async (req, res) => {
   try {
     const { email, password, nome, avatar } = req.body;
@@ -97,11 +97,11 @@ app.post('/api/register', async (req, res) => {
       user: result.rows[0] 
     });
   } catch (error) {
-    console.error('Erro no cadastro:', error);
+    console.error('Registration error:', error);
     if (error.code === '23505') { // Unique violation
       res.status(400).json({ success: false, error: 'Email já cadastrado' });
     } else {
-      res.status(500).json({ success: false, error: 'Erro interno' });
+      res.status(500).json({ success: false, error: 'Internal server error' });
     }
   }
 });
@@ -126,7 +126,7 @@ app.post('/api/login', async (req, res) => {
     });
   } catch (error) {
     console.error('Erro no login:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
@@ -150,8 +150,8 @@ app.get('/api/profile/:userId', async (req, res) => {
     
     res.json({ success: true, profile: result.rows[0] });
   } catch (error) {
-    console.error('Erro ao buscar perfil:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    console.error('Error fetching profile:', error);
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
@@ -169,11 +169,11 @@ app.put('/api/credits/:userId', async (req, res) => {
     res.json({ success: true, credits: result.rows[0].credits });
   } catch (error) {
     console.error('Erro ao atualizar créditos:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
-// 5. Salvar carrinho
+// 5. Save cart
 app.post('/api/cart/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
@@ -190,14 +190,14 @@ app.post('/api/cart/:userId', async (req, res) => {
       );
     }
     
-    res.json({ success: true, message: 'Carrinho salvo' });
+    res.json({ success: true, message: 'Cart saved' });
   } catch (error) {
-    console.error('Erro ao salvar carrinho:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    console.error('Error saving cart:', error);
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
-// 6. Buscar carrinho
+// 6. Get cart
 app.get('/api/cart/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
@@ -209,12 +209,12 @@ app.get('/api/cart/:userId', async (req, res) => {
     
     res.json({ success: true, items: result.rows });
   } catch (error) {
-    console.error('Erro ao buscar carrinho:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    console.error('Error fetching cart:', error);
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
-// 7. Salvar favoritos
+// 7. Save favorites
 app.post('/api/favorites/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
@@ -231,14 +231,14 @@ app.post('/api/favorites/:userId', async (req, res) => {
       );
     }
     
-    res.json({ success: true, message: 'Favoritos salvos' });
+    res.json({ success: true, message: 'Favorites saved' });
   } catch (error) {
-    console.error('Erro ao salvar favoritos:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    console.error('Error saving favorites:', error);
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
-// 8. Buscar favoritos
+// 8. Get favorites
 app.get('/api/favorites/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
@@ -250,15 +250,16 @@ app.get('/api/favorites/:userId', async (req, res) => {
     
     res.json({ success: true, items: result.rows.map(row => row.product_id) });
   } catch (error) {
-    console.error('Erro ao buscar favoritos:', error);
-    res.status(500).json({ success: false, error: 'Erro interno' });
+    console.error('Error fetching favorites:', error);
+    res.status(500).json({ success: false, error: 'Internal server error' });
   }
 });
 
-// Porta
+// Port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`API rodando na porta ${PORT}`);
+  console.log(`API rodando na Port ${PORT}`);
 });
 
 module.exports = app;
+

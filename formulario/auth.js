@@ -113,13 +113,13 @@ function calculatePasswordStrength(password) {
     
     // Determine feedback and color
     if (strength < 40) {
-        feedback = 'Fraca';
+        feedback = 'Weak';
         color = '#DC3545';
     } else if (strength < 80) {
         feedback = 'Média';
         color = '#FFC107';
     } else {
-        feedback = 'Forte';
+        feedback = 'Strong';
         color = '#28A745';
     }
     
@@ -304,7 +304,7 @@ function setupGuestLogin() {
             
             const submitButton = this;
             const originalText = submitButton.innerHTML;
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Entrando...';
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Signing in...';
             submitButton.disabled = true;
             
             try {
